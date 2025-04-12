@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section id="header">
+        <a href="#" class="text-logo"> <img src="logo.png" alt="EcoStruct Logo" style="height: 40px; vertical-align: middle;">Eco-Struct</a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><button id="login-btn">Login</button></li>
+                <li class="account-dropdown">
+                    <button class="account-btn">My</button>
+                    <div class="dropdown-content">
+                        <a href="javascript:void(0);" id="signInLink">Sign In</a>
+                      <a href="cart.html">View Cart</a>
+                    </div>
+                  </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #5F8B4C;">Login</h2>
+            <form action="#">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button id="login-btn" type="submit">Login</button>
+            </form>
+            <p style="color: #5F8B4C;">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Modal for Signup -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #5F8B4C;">Sign Up</h2>
+            <form action="#">
+                <label for="newusername">Username:</label><br>
+                <input type="text" id="newusername" name="newusername" required><br><br>
+                <label for="newemail">Email:</label><br>
+                <input type="text" id="newemail" name="newemail" required><br><br>
+                <label for="newpassword">Password:</label><br>
+                <input type="password" id="newpassword" name="newpassword" required><br><br>
+                <button id="login-btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="hero">
+        <h4>Shop-only-sustainable</h4>
+        <h2>" Build Smart</h2>
+        <h1> Sustain the Earth"</h1>
+        <a href="shop.html">
+            <button id="shopNowBtn">Shop Now</button>
+          </a>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="f1.png" alt="">
+            <h6>Trees Planted</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f2.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f4.png" alt="">
+            <h6>Recycling</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f6.png" alt="">
+            <h6>CO<sup>2</sup> Reduction</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f5.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Explore Our Sustainable Construction Materials</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product1.html';">
+                <img src="b1.jpg" alt="">
+                <div class="des">
+                    <span>Plastic Bricks</span>
+                    <h5>Leightweight,weather-resistant,and strong</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹15</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product2.html';">
+                <img src="j1.jpg" alt="">
+                <div class="des">
+                    <span>Paver Blocks</span>
+                    <h5>Ideal for pathways,driveways,and public spaces</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹30</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Join the Movement with | EcoStruct | Redefining Construction, Sustainably</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="your email address">
+                    <button id="newsletterSignUpBtn" class="normal">Sign Up</button>
+                </div>
+            </section>
+
+
+
+            <footer class="section-p1">
+                <div class="col">
+                    <a href="#" class="text-logo"><img src="logo.png" alt="EcoStruct Logo" style="height: 40px; vertical-align: middle;">Eco-struct</a>
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong> Amaravati,Vijayawada,522237,India</p>
+                    <p><strong>Phone:</strong> (+91) 9963652781 / (+91) 7993354585</p>
+                    <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 EcoConstruct. All rights reserved</p>
+                </div>
+            </footer>
+
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>

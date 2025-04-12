@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#" class="text-logo"> <img src="logo.png" alt="EcoStruct Logo" style="height: 40px; vertical-align: middle;">Eco-Struct</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetail" class="section-p1">
+        <div class="single-pro-img">
+            <img src="b1.jpg" width="100%" id="mainimg" alt="">
+
+         
+        </div>
+
+
+        <div class="single-pro-detail">
+            <h6>Plastic Bricks</h6>
+            <h4>Leightweight,weather-resistant,and strong</h4>
+            <h2>₹15</h2>
+            <input type="number" value="1">
+            <button class="normal">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Crafted from 100% recycled plastic, these durable bricks are an innovative solution to reduce plastic waste and promote sustainable construction. Engineered for strength and longevity, they offer excellent thermal insulation and are resistant to water, pests, and rot. Ideal for building homes, schools, or community structures, these eco-friendly bricks help lower your carbon footprint while supporting a circular economy. Easy to handle and stack, they combine practicality with purpose—building a greener future, one brick at a time.
+
+            </span>
+        </div>
+    </section>
+  
+        
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Join the Movement with | EcoStruct | Redefining Construction, Sustainably</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button id="newsletterSignUpBtn" class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href="#" class="text-logo"><img src="logo.png" alt="EcoStruct Logo" style="height: 40px; vertical-align: middle;">Eco-struct</a>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Amaravati,Vijayawada,522237,India</p>
+            <p><strong>Phone:</strong> (+91) 9963652781 / (+91) 7993354585</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+        <div class="copyright">
+            <p>© 2025 EcoConstruct. All rights reserved</p>
+        </div>
+    </footer>
+
+            <script>
+                var mainimg = document.getElementById("mainimg");
+                var smallimg = document.getElementsByClassName("smallimg")
+
+                smallimg[0].onclick = function(){
+                    mainimg.src = smallimg[0].src;
+                }
+                smallimg[1].onclick = function(){
+                    mainimg.src = smallimg[1].src;
+                }
+                smallimg[2].onclick = function(){
+                    mainimg.src = smallimg[2].src;
+                }
+                smallimg[3].onclick = function(){
+                    mainimg.src = smallimg[3].src;
+                }
+            </script>
+
+
+
+            <script src="script.js"></script>
+</body>
+</html>
